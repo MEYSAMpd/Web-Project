@@ -1,53 +1,3 @@
-async function loadHeader() {
-
-    const response = await fetch("partials/header.html");
-    const data = await response.text();
-
-    document.getElementById("header-placeholder").innerHTML = data;
-
-    setupNavbar();
-}
-
-async function loadFooter() {
-    const response = await fetch("partials/footer.html");
-    const data = await response.text();
-
-    document.getElementById("footer-placeholder").innerHTML = data;
-
-    setupNavbar();
-}
-
-function setupNavbar() {
-    const navItems = document.querySelectorAll(".header nav ul li");
-    navItems.forEach(item => {
-        item.addEventListener("click", function () {
-            const targetPage = this.dataset.page;
-            window.location.href = targetPage;
-        });
-    });
-}
-
-loadHeader();
-loadFooter();
-
-fetch('partials/tryThis.html')
-    .then(res => res.text())
-    .then(html => {
-        const el = document.getElementById('tryThis-placeholder');
-        if (!el) return;
-        el.innerHTML = html;
-        initTryThisCarousel();
-    }
-);
-
-fetch('partials/sub.html')
-    .then(res => res.text())
-    .then(html => {
-    document.getElementById('sub-placeholder').innerHTML = html;
-});
-
-// blog post page
-
 document.addEventListener("DOMContentLoaded", function () {
     const postsContainer = document.getElementById("postsContainer");
     const searchInput = document.getElementById("blogSearchInput");
@@ -250,7 +200,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 imageAlt: "professionalChef-img",
                 excerpt: "Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim",
                 author: "Dianne Russell",
-                authorImage: "images/dianne-icon.svg",
+                authorImage: "../images/dianne-icon.svg",
                 authorAlt: "dianne-img",
                 date: "12 November 2021"
             },
@@ -264,7 +214,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 authorImage: "images/leslie-icon.svg",
                 authorAlt: "leslie-img",
                 date: "12 November 2021"
-            },            
+            },
         ]
     };
 
@@ -284,7 +234,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         postsContainer.innerHTML = filteredPosts.map(post => `
             <article class="post-card" data-page="${post.page}">
-                <div class="post-card-flex"">
+                <div class="post-card-flex">
                     <div class="post-image">
                         <img src="${post.image}" alt="${post.imageAlt}">
                     </div>
@@ -331,66 +281,4 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     renderPosts();
-});
-
-// slider
-function initTryThisCarousel() {
-    const carousel = document.querySelector("[data-trythis-carousel]");
-    if (!carousel) return;
-
-    const track = carousel.querySelector(".tryThis-track");
-    const prevBtn = document.querySelector(".prev-btn");
-    const nextBtn = document.querySelector(".next-btn");
-
-    const getScrollAmount = () => {
-        const firstCard = track.querySelector(".tryThis-item");
-        if (!firstCard) return 300;
-        return firstCard.offsetWidth + 40;
-    };
-
-    if (prevBtn) {
-        prevBtn.addEventListener("click", function () {
-            track.scrollBy({
-                left: -getScrollAmount(),
-                behavior: "smooth"
-            });
-        });
-    }
-
-    if (nextBtn) {
-        nextBtn.addEventListener("click", function () {
-            track.scrollBy({
-                left: getScrollAmount(),
-                behavior: "smooth"
-            });
-        });
-    }
-}
-
-
-document.addEventListener("click", function (e) {
-    const button = e.target.closest(".custom-button");
-    if (button && button.dataset.page) {
-        window.location.href = button.dataset.page;
-        return;
-    }
-
-    const card = e.target.closest(".tryThis-item, .recipe-card, .post-card, .tasty-item");
-    if (card && card.dataset.page) {
-        window.location.href = card.dataset.page;
-    }
-});
-
-document.addEventListener("keydown", function (e) {
-    const card = e.target.closest(".tryThis-item, .recipe-card, .post-card, .tasty-item");
-    if (!card || !card.dataset.page) return;
-
-    if (e.key === "Enter" || e.key === " ") {
-        e.preventDefault();
-        window.location.href = card.dataset.page;
-    }
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-    initTryThisCarousel();
 });
