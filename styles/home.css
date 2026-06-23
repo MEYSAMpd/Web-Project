@@ -1,0 +1,195 @@
+#hot-recipes-container {
+    background-color: white;
+    border-radius: 30px;
+    padding: 5px 10px 5px 20px;
+    box-shadow: 10px 10px 10px 3px rgba(0, 0, 0, 0.05);
+    margin: 0 0;
+}
+
+#hotRecepies-icon {
+    background-image: url("../images/hotRecepies-icon.svg");
+    color: black;
+    padding: 10px 20px 10px 40px;
+    font-weight: bold;
+}
+
+/* categoreis */
+
+.left-text {
+    text-align: left;
+    color: var(--text-color);
+    font-size: 25px;
+}
+
+.right-text {
+    background-color: rgba(157, 239, 241, 0.3);
+    border-radius: 18px;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 1px 30px 1px 30px;
+    margin-right: 0px;
+}
+
+.icons-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    padding: 20px;
+    margin-left: 5px;
+    margin-bottom: 150px;
+}
+
+.icon-item {
+    border-radius: 40px;
+    padding: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 170px;
+    height: 230px;
+    gap: 30px;
+}
+
+.icon-item img {
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.icon-item h3 {
+    margin: 0;
+    color: var(--text-color);
+}
+
+#breakfast {
+    background: linear-gradient(to bottom, #ffffff, #9790962f);
+}
+
+#vegan {
+    background: linear-gradient(to bottom, #ffffff, #c3e2de81);
+}
+
+#meat {
+    background: linear-gradient(to bottom, #ffffff, #f09e9e33);
+}
+
+#desert {
+    background: linear-gradient(to bottom, #ffffff, #fcb3b333);
+}
+
+#lunch {
+    background: linear-gradient(to bottom, #ffffff, #a3dfd733);
+}
+
+#chocolate {
+    background: linear-gradient(to bottom, #ffffff, #6d928d1c);
+}
+
+/* foods */
+
+.foods h1 {
+    font-size: 48px;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.foods p {
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.grid-foods {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    width: 1210px;
+    height: 1250px;
+    margin: 0 0 150px 50px;
+    align-items: stretch;
+    justify-items: center;
+}
+
+.recipe-card {
+    background: linear-gradient(to bottom, #e5fcff0a, #89f3e54b);
+    border-radius: 30px;
+    overflow: hidden;
+    text-align: left;
+    padding: 10px 0px 0px 15px;
+    height: 390px;
+    width: 330px;
+    cursor: pointer;
+}
+
+.recipe-card #food-container {
+    background-color: #e5fcff0a;
+}
+
+.recipe-card #clock-container {
+    background-color: #e5fcff0a;
+}
+
+.recipe-card h3 {
+    font-size: 21px;
+    padding-bottom: 25px;
+}
+
+.recipe-card img {
+    width: 95%;
+    height: 90%;
+}
+
+#healthyFood {
+    background: none;
+    border-radius: 0;
+    padding: 0;
+    height: 390px;
+    width: 330px;
+    margin-top: 10px;
+    cursor: auto;
+}
+
+#healthyFood img {
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#healthyFood:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+/* chef */
+
+#chef {
+    margin: 100px 0;
+    background-color: white;
+}
+
+#chef h1 {
+    font-size: 48px;
+    padding-bottom: 20px;
+}
+
+#chef p {
+    padding-bottom: 30px;
+}
+
+#chef-button {
+    margin-top: 30px;
+    width: 100px;
+    height: 30px;
+    font-weight: 600;
+    padding-left: 55px;
+}
+
+#chef-img {
+    background: linear-gradient(to bottom, white, #e5fcff);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}

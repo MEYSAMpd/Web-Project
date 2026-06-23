@@ -1,0 +1,87 @@
+.contact-us {
+    margin: 60px 60px;
+    padding: 0 20px;
+}
+
+.contact-us h1 {
+    text-align: center;
+}
+
+.contact-flex {
+    display: flex;
+    flex: 2;
+    gap: 35px;
+    align-items: center;
+}
+
+.photoWrap {
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0;
+    padding: 0 0;
+}
+
+
+.form {
+    padding-top: 100px;
+    flex: 2;
+}
+
+.row {
+    display: grid;
+    gap: 25px;
+    margin-bottom: 22px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.row.one {
+    grid-template-columns: 1fr;
+}
+
+.field label {
+    display: block;
+    font-size: 13px;
+    letter-spacing: .6px;
+    color: #6e6e6e;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+
+.field input,
+.field select,
+.field textarea {
+    font-family: 'Inter 18pt';
+    width: 350px;
+    border: 2px solid #cccbcb73;
+    border-radius: 12px;
+    padding: 16px 14px;
+    font-size: 14px;
+}
+
+.field textarea::placeholder,
+.field input::placeholder {
+    color: #6e6e6e81;
+}
+
+.field select {
+    width: 383px;
+    padding-top: 14px;
+    padding-right: 30px;
+    color: #000000e0;
+    background-color: white;
+}
+
+.field textarea {
+    width: 760px;
+    height: 140px;
+    resize: none;
+}
+
+.field .submit-btn {
+    background-color: black;
+    width: 200px;
+    color: rgba(255, 255, 255, 0.911);
+    font-weight: 550;
+}

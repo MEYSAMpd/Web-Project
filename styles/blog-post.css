@@ -1,0 +1,80 @@
+#checkOut{
+    font-size: 34px;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.become-chef{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 50px 80px 50px;
+}
+
+.become-chef h1{
+    margin-top: 50px;
+    font-size: 56px;
+}
+
+.become-chef .post-meta{
+    margin: 35px 0px 50px 0px;
+    justify-content: center;
+}
+
+.become-chef .author{
+    padding-right: 60px;
+}
+
+#pro-chef{
+    margin: 70px 0px;
+    display: block;
+}
+
+/* questions  */
+
+#questions-layout{
+    gap: 0px;
+    margin: 50px 50px;
+}
+
+#questions{
+    flex: 3;
+    margin-left: 50px;
+}
+
+.step h2 {
+    margin-left: 32px;
+    margin-bottom: 20px;
+}
+
+.step h3 {
+    font-size: 21px;
+    margin-left: 32px;
+    margin-bottom: 20px;
+}
+
+
+.step h1{
+    background: linear-gradient(to right , #b1b0b01e , white);
+    border-bottom: 2px solid #d1d1d14b;
+    border-top: 2px solid #d1d1d14b;
+    padding: 30px;
+    font-size: 32px;
+    font-weight: 600;
+    width: 100%;
+    font-style: italic;
+}
+
+#questions .step {
+    margin-bottom: 80px;
+}
+
+#share{
+    align-items: center;
+    flex: 1;
+}
+
+#share img{
+    align-items: center;
+    margin: 5px;
+}

@@ -200,7 +200,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 imageAlt: "professionalChef-img",
                 excerpt: "Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim",
                 author: "Dianne Russell",
-                authorImage: "../images/dianne-icon.svg",
+                authorImage: "images/dianne-icon.svg",
                 authorAlt: "dianne-img",
                 date: "12 November 2021"
             },

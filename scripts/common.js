@@ -91,3 +91,11 @@ document.addEventListener("click", function (e) {
 document.addEventListener("DOMContentLoaded", function () {
     initTryThisCarousel();
 });
+
+document.addEventListener("click", function (e) {
+    const button = e.target.closest(".custom-button");
+    if (button && button.dataset.page) {
+        window.location.href = button.dataset.page;
+        return;
+    }
+});
