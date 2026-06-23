@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:,">
+    <title>Recipe detail</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/script.js" defer></script>
+</head>
+
+<body>
+    
+    <div id="header-placeholder"></div>
+    
+    <section class="recipe-details">
+        <div class="recipe-header">
+            <div class="meta-left">
+                <h1 class="recipe-title">Health Japanese Fried Rice</h1>
+                <div class="recipe-meta">
+                    <div class="recipe-author">
+                        <img src="images/john-icon.svg" alt="john-img" class="recipe-author-img">
+                        <div class="recipe-author-info">
+                            <h4>John Smith</h4>
+                            <p class="recipe-author-date">15 March 2022</p>
+                        </div>
+                    </div>
+                        
+                    <div class="recipe-author" id="meta-center">
+                        <img src="images/clock-icon.svg" alt="clock-icon">
+                        <div class="recipe-author-info">
+                            <h4>PREP TIME</h4>
+                            <p class="recipe-author-date">15 Minutes</p>
+                        </div>
+                    </div>
+                    <div class="recipe-author" id="meta-center">
+                        <img src="images/clock-icon.svg" alt="clock-icon">
+                        <div class="recipe-author-info">
+                            <h4>COOK TIME</h4>
+                            <p class="recipe-author-date">15 Minutes</p>
+                        </div>
+                    </div>
+                    <div class="recipe-author" id="meta-center">
+                        <img src="images/ForkKnife-icon.svg" alt="ForkKnife-icon">
+                        <div class="recipe-author-info">
+                            <p class="recipe-author-date">Chicken</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="meta-right">
+                <button class="icon-btn">
+                    <img src="images/printer-icon.svg" alt="printer-icon">
+                    <span>PRINT</span>
+                </button>
+            
+                <button class="icon-btn">
+                    <img src="images/share-icon.svg" alt="share-icon">
+                    <span>SHARE</span>
+                </button>
+            </div>
+        </div>
+        
+    
+        <div class="recipe-content">
+            <div class="image-box">
+                <img src="images/video.png" alt="Japanese Fried Rice" class="recipe-image">
+
+            </div>
+
+            <aside class="nutrition-card">
+                <h2>Nutrition Information</h2>
+                <ul class="nutrition-list">
+                    <li><span class="list-title">Calories</span><span class="list-value">219.9 kcal</span></li>
+                    <li><span class="list-title">Total Fat</span><span class="list-value">10.7 g</span></li>
+                    <li><span class="list-title">Protein</span><span class="list-value">7.9 g</span></li>
+                    <li><span class="list-title">Carbohydrate</span><span class="list-value">22.3 g</span></li>
+                    <li><span class="list-title">Cholesterol</span><span class="list-value">37.4 mg</span></li>
+                </ul>
+                <p class="nutrition-note">
+                    Adipisicing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.
+                </p>
+            </aside>
+        </div>
+    </section>
+
+    <div class="custom-desc" id="recipeDetailText">
+        <p>Lorem ipsum dolor sit amet, consectrtur adipiscing elit, sed do eiusmod tempor 
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud <br>
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+            dolor in reprehenderit in voluptate velit esse cillum dolor eu fugiat nulla pariatur. <br>
+            Excepteur sint occaecat cupidatat non proident, dunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+    </div>
+
+    <main class="main-layout">
+        <section class="recipe-left-column">
+            <h1>Ingredients</h1>
+            <div class="ingredients-section">
+                <h2>For main dish</h2>
+                <ul class="ingredients-list">
+                    <li>
+                        <label class="custom-checkbox">
+                            <input type="checkbox" checked>
+                            <span class="checkmark"></span>
+                            <span class="ingredient-text">Lorem ipsum dolor sit amet</span>
+                        </label>               
+                    </li>
+                    <li>
+                        <label class="custom-checkbox">
+                          <input type="checkbox" >
+                          <span class="checkmark"></span>
+                          <span class="ingredient-text">Lorem ipsum dolor sit amet</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="custom-checkbox">
+                          <input type="checkbox" >
+                          <span class="checkmark"></span>
+                          <span class="ingredient-text">Lorem ipsum dolor sit amet</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="custom-checkbox">
+                          <input type="checkbox" >
+                          <span class="checkmark"></span>
+                          <span class="ingredient-text">Lorem ipsum dolor sit amet</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="custom-checkbox">
+                          <input type="checkbox" >
+                          <span class="checkmark"></span>
+                          <span class="ingredient-text">Lorem ipsum dolor sit amet</span>
+                        </label>
+                    </li>
+                </ul>
+        
+                <h2>For the sauce</h2>
+                <ul class="ingredients-list">
+                    <li>
+                        <label class="custom-checkbox">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            <span class="ingredient-text">Lorem ipsum dolor sit amet</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="custom-checkbox">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            <span class="ingredient-text">Lorem ipsum dolor sit amet</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="custom-checkbox">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            <span class="ingredient-text">Lorem ipsum dolor sit amet</span>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        
+            <div class="directions-section">
+                <h2>Directions</h2>
+                <ul class="ingredients-list">
+                    <li>
+                        <div class="step">
+                            <label class="custom-checkbox">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                <span class="ingredient-text">1. Lorem ipsum dolor sit amet</span>
+                            </label>
+                            <p>
+                                Nemo enim imsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni <br>
+                                dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor <br>
+                                sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore <br>
+                                magnam aliquam quaerat voluptatem.
+                            </p>
+                            <img src="images/womanChef.png" alt="womanChef-img" class="step-image">
+                            <p>
+                                Nemo enim imsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni <br>
+                                dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor <br>
+                                sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore <br>
+                                magnam aliquam quaerat voluptatem.
+                            </p>  
+                        </div>
+                    </li>
+                    <li>
+                        <div class="step">
+                            <label class="custom-checkbox">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                <span class="ingredient-text">2. Lorem ipsum dolor sit amet</span>
+                            </label>
+                            <p>
+                                Nemo enim imsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni <br>
+                                dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor <br>
+                                sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore <br>
+                                magnam aliquam quaerat voluptatem.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="step">
+                            <label class="custom-checkbox">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                <span class="ingredient-text">3. Lorem ipsum dolor sit amet</span>
+                            </label>
+                            <p>
+                                Nemo enim imsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni <br>
+                                dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor <br>
+                                sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore <br>
+                                magnam aliquam quaerat voluptatem.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    
+        <aside class="sidebar-recipes">
+            <section class="tasty-recipes">
+                <h3 class="sidebar-title">Other Recipes</h3>
+    
+                <div class="tasty-item" data-page="recipeDetailsPage.html" tabindex="0" role="button">                    <img src="images/meatball.png" alt="meatball-ing">
+                    <div class="tasty-info">
+                        <h4>Chicken Meatballs <br> with Cream Cheese...</h4>
+                        <span class="tasty-author">By Andreas Paula</span>
+                    </div>
+                </div>
+    
+                <div class="tasty-item" data-page="recipeDetailsPage.html" tabindex="0" role="button">
+                    <img src="images/pasta.png" alt="pasta-ing">
+                    <div class="tasty-info">
+                        <h4>The Creamiest <br> Creamy Chicken an...</h4>
+                        <span class="tasty-author">By Andreas Paula</span>
+                    </div>
+                </div>
+    
+                <div class="tasty-item" data-page="recipeDetailsPage.html" tabindex="0" role="button">
+                    <img src="images/chicken&rice.png" alt="chicken&rice-ing">
+                    <div class="tasty-info">
+                        <h4>The Best Easy One <br> Pot Chicken and Rice</h4>
+                        <span class="tasty-author">By Andreas Paula</span>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="promo-banner">
+                <img src="images/healthyFood.png" alt="Don't forget to eat healthy food">
+            </section>
+        </aside>
+    </main>
+
+    <div id="sub-placeholder"></div>
+
+    <section class="tryThis" id="maybeLiked">
+        <div class="tryThis-header">
+            <div class="flex">
+                <h1 class="custom-title" id="checkOut">You may like these recipe too</h1>
+            </div>
+        
+            <div class="carousel-controls">
+                <button type="button" class="carousel-btn prev-btn">‹</button>
+                <button type="button" class="carousel-btn next-btn">›</button>
+            </div>
+        </div>
+        <div id="tryThis-placeholder"></div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+</body>
+
+</html>

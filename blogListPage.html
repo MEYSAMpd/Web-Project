@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:,">
+    <title>Blogs</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/script.js" defer></script>
+
+</head>
+
+<body>
+    
+    <div id="header-placeholder"></div>
+
+    <section>
+        <div class="title">
+            <h1 class="custom-title">Blog & Article</h1>
+            <p class="custom-desc">
+                Lorem ipsum dolor sit amet, consecteture adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            </p>
+        </div>
+        <div class="search">
+            <div class="input-box">
+                <input id="blogSearchInput" type="text" placeholder="Search article, news or recipe..." />
+                <button id="blogSearchBtn" type="button">Search</button>
+            </div>  
+        </div>
+    </section>
+
+    <main class="main-layout">
+        <section class="posts" id="postsContainer"></section>
+    
+        <aside class="sidebar-recipes">
+            <section class="tasty-recipes">
+                <h3 class="sidebar-title">Tasty Recipes</h3>
+    
+                <div class="tasty-item" data-page="recipeDetailsPage.html" tabindex="0" role="button">
+                    <img src="images/meatball.png" alt="meatball-ing">
+                    <div class="tasty-info">
+                        <h4>Chicken Meatballs <br> with Cream Cheese</h4>
+                        <span class="tasty-author">By Andreas Paula</span>
+                    </div>
+                </div>
+    
+                <div class="tasty-item" data-page="recipeDetailsPage.html" tabindex="0" role="button">
+                    <img src="images/pasta.png" alt="pasta-ing">
+                    <div class="tasty-info">
+                        <h4>Traditional <br> Bolognese Ragu</h4>
+                        <span class="tasty-author">By Andreas Paula</span>
+                    </div>
+                </div>
+    
+                <div class="tasty-item" data-page="recipeDetailsPage.html" tabindex="0" role="button">
+                    <img src="images/dumplings.png" alt="dumplings-ing">
+                    <div class="tasty-info">
+                        <h4>Pork and Chive <br> Chinese Dumplings</h4>
+                        <span class="tasty-author">By Andreas Paula</span>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="promo-banner">
+                <img src="images/healthyFood.png" alt="Don't forget to eat healthy food">
+            </section>
+        </aside>
+    </main>
+    
+    <section>
+        <div class="pagination" id="pagination">
+            <button class="page-btn active" data-page="1" type="button">1</button>
+            <button class="page-btn" data-page="2" type="button">2</button>
+            <button class="page-btn" data-page="3" type="button">3</button>
+            <button class="page-btn" data-page="4" type="button">4</button>
+            <button class="page-btn" data-page="5" type="button">5</button>
+        </div>
+    </section>
+    
+    <div id="sub-placeholder"></div>
+    
+    <div id="footer-placeholder"></div>
+
+</body>
+
+</html>

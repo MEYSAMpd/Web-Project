@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:,">
+    <title>Foodieland</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/script.js" defer></script>
+</head>
+
+<body>
+    
+    <div id="header-placeholder"></div>
+    
+    <section class="flex" id="food">
+        <div class="flex-text">
+            <div class="recipe-info">
+                <div class="tag-container" id="hot-recipes-container">
+                    <span class="recipe-tag" id="hotRecepies-icon">Hot Recipes</span>        
+                </div>
+            </div>
+            <h1 class="custom-title">Spicy delicious <br> chicken wings</h1>
+            <p class="custom-desc">
+                Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod <br>
+                tempor incididunt ut labore et dolore magna aliqut enim ad minim
+            </p>
+    
+            <div class="recipe-info">
+                <div class="tag-container clock-container">
+                    <span class="recipe-tag clock-icon">30 Minutes</span>            
+                </div>
+                <div class="tag-container food-container">
+                    <span class="recipe-tag food-icon">Chicken</span>            
+                </div>
+            </div>
+    
+            <div class="recipe-author">
+                <img src="images/john-icon.svg" alt="john-img" class="recipe-author-img">
+                <div class="recipe-author-info">
+                    <h4>John Smith</h4>
+                    <p class="recipe-author-date">15 March 2022</p>
+                </div>
+                <button class="custom-button" data-page="recipeDetailsPage.html">
+                    View Recipes<i class="button-icon"></i>
+                </button>
+            </div>
+        </div>
+        <div class="flex-image">
+            <img src="images/food.png" alt="food-img">
+        </div>
+        <div class="badge-icon">
+            <img src="images/Badge.png" alt="">
+        </div>
+    </section>
+              
+    <section>
+        <div class = "container">
+            <div class = "left-text">
+                <h1>Categories</h1>
+            </div>
+            <div class = "right-text">
+                <h3>View All Categories</h3>
+            </div>
+        </div>
+        <div class="icons-container">
+            <div class="icon-item" id = "breakfast">
+                <img src="images/breakfast-icon.png" alt="breakfast-icon">
+                <h3>Breakfast</h3>
+            </div>
+            <div class="icon-item" id = "vegan">
+                <img src="images/vegan-icon.png" alt="vegan-icon">
+                <h3>Vegan</h3>
+            </div>
+            <div class="icon-item" id = "meat">
+                <img src="images/meat-icon.png" alt="meat-icon">
+                <h3>Meet</h3>
+            </div>
+            <div class="icon-item" id = "desert">
+                <img src="images/dessert-icon.png" alt="desert-icon">
+                <h3>Dessert</h3>
+            </div>
+            <div class="icon-item" id = "lunch">
+                <img src="images/lunch-icon.png" alt="lunch-icon">
+                <h3>Lunch</h3>
+            </div>
+            <div class="icon-item" id = "chocolate">
+                <img src="images/chocolate-icon.png" alt="chocolate-icon">
+                <h3>Chocolate</h3>
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="foods">
+        <h1 class="custom-title">Simple and tasty recipes</h1>
+        <p class="custom-desc">
+            Lorem ipsum dolor sit amet, consectetuipisicing elit, sed doeiusmod tempor incididunt ut<br>
+            labore et dolore magna aliqut enim ad minim
+        </p>
+
+        <div class="grid-foods">
+            <div class="recipe-card" data-page="recipeDetailsPage.html" tabindex="0" role="button">
+                <div class="image-container">
+                    <img src="images/burgur.png" alt="burgur-img">
+                    <div class="heart-icon">
+                        <img src="images/redHeart-icon.svg">
+                    </div>         
+                </div>
+                <h3 class="custom-title">Big and Juicy Wagyu Beef <br> Cheeseburger</h3>
+                <div class="tag-container">
+                    <span class="recipe-tag clock-icon">30 Minutes</span>
+                </div>
+                <div class="tag-container">
+                    <span class="recipe-tag food-icon">Sweet</span>
+                </div>
+            </div>
+
+            <div class="recipe-card" data-page="recipeDetailsPage.html" tabindex="0" role="button">
+                <div class="image-container">
+                    <img src="images/salmon.png" alt="salmon-img">
+                    <div class="heart-icon">
+                        <img src="images/whiteHeart-icon.svg">
+                    </div>
+                </div>
+                <h3 class="custom-title">Fresh Lime Roasted Salmon with <br> Ginger Sauce</h3>
+                <div class="tag-container">
+                    <span class="recipe-tag clock-icon">30 Minutes</span>
+                </div>
+                <div class="tag-container">
+                    <span class="recipe-tag food-icon">Sweet</span>
+                </div>
+            </div>
+            
+            <div class="recipe-card" data-page="recipeDetailsPage.html" tabindex="0" role="button">
+                <div class="image-container">
+                    <img src="images/pancake.png" alt="pancake-img">
+                    <div class="heart-icon">
+                        <img src="images/whiteHeart-icon.svg">
+                    </div>
+                </div>
+                <h3 class="custom-title">Strawberry Oatmeal Pancake <br> with Honey Syrup</h3>
+                <div class="tag-container">
+                    <span class="recipe-tag clock-icon">30 Minutes</span>
+                </div>
+                <div class="tag-container">
+                    <span class="recipe-tag food-icon">Sweet</span>
+                </div>
+            </div>
+
+            <div class="recipe-card" data-page="recipeDetailsPage.html" tabindex="0" role="button">
+                <div class="image-container">
+                    <img src="images/salad.png" alt="salad-img">
+                    <div class="heart-icon">
+                        <img src="images/redHeart-icon.svg">
+                    </div>
+                </div>
+                <h3 class="custom-title">Fresh and Healthy Mixed <br> Mayonnaise Salad</h3>
+                <div class="tag-container">
+                    <span class="recipe-tag clock-icon">30 Minutes</span>
+                </div>
+                <div class="tag-container">
+                    <span class="recipe-tag food-icon">Sweet</span>
+                </div>
+            </div>
+
+            <div class="recipe-card" data-page="recipeDetailsPage.html" tabindex="0" role="button">
+                <div class="image-container">
+                    <img src="images/meatball.png" alt="meatball-img">
+                    <div class="heart-icon">
+                        <img src="images/whiteHeart-icon.svg">
+                    </div>
+                </div>
+                <h3 class="custom-title">Chicken Meatballs with Cream <br> Cheese</h3>
+                <div class="tag-container">
+                    <span class="recipe-tag clock-icon">30 Minutes</span>
+                </div>
+                <div class="tag-container">
+                    <span class="recipe-tag food-icon">Sweet</span>
+                </div>
+            </div>
+
+            <div class="recipe-card" id="healthyFood">
+                <img src="images/healthyFood.png" alt="healthyFood-img">
+            </div>
+
+            <div class="recipe-card" data-page="recipeDetailsPage.html" tabindex="0" role="button">
+                <div class="image-container">
+                    <img src="images/fruitypancake.png" alt="fruitypancake-img">
+                    <div class="heart-icon">
+                        <img src="images/redHeart-icon.svg">
+                    </div>
+                </div>
+                <h3 class="custom-title">Fruity Pancake with Orange & <br> Blueberry</h3>
+                <div class="tag-container">
+                    <span class="recipe-tag clock-icon">30 Minutes</span>
+                </div>
+                <div class="tag-container">
+                    <span class="recipe-tag food-icon">Sweet</span>
+                </div>
+            </div>
+
+            <div class="recipe-card" data-page="recipeDetailsPage.html" tabindex="0" role="button">
+                <div class="image-container">
+                    <img src="images/chicken&rice.png" alt="chicken&rice-img">
+                    <div class="heart-icon">
+                        <img src="images/whiteHeart-icon.svg">
+                    </div>
+                </div>
+                <h3 class="custom-title">The Best Easy One Pot Chicken <br> and Rice</h3>
+                <div class="tag-container">
+                    <span class="recipe-tag clock-icon">30 Minutes</span>
+                </div>
+                <div class="tag-container">
+                    <span class="recipe-tag food-icon">Sweet</span>
+                </div>
+            </div>
+
+            <div class="recipe-card" data-page="recipeDetailsPage.html" tabindex="0" role="button">
+                <div class="image-container">
+                    <img src="images/pasta.png" alt="pasta-img">
+                    <div class="heart-icon">
+                        <img src="images/whiteHeart-icon.svg">
+                    </div>
+                </div>
+                <h3 class="custom-title">The Creamiest Creamy Chicken <br> and Bacon Pasta</h3>
+                <div class="tag-container">
+                    <span class="recipe-tag clock-icon">30 Minutes</span>
+                </div>
+                <div class="tag-container">
+                    <span class="recipe-tag food-icon">Sweet</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class = "flex">
+        <div class="flex-text" id="chef">
+            <h1 class="custom-title">Everyone can be a <br>
+                chef in their own kitchen</h1>
+            <p class="custom-desc">
+                Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do <br>
+                eiusmod tempor incididunt ut labore et dolore magna aliqut enim <br>
+                ad minim
+            </p>
+        
+            <a class="custom-button" id = chef-button>
+                Learn More
+            </a>
+        
+        </div>
+        <div class="flex-image" id="chef-img">
+            <img src="images/chef.png" alt="chef-img">
+        </div>
+    </section>
+
+    <section class="instagram">
+        <h1 class="custom-title">Check out @foodieland on Instagram</h1>
+        <p class="custom-desc">
+            Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore <br>
+            magna aliqut enim ad minim
+        </p>
+        <div class="flex">
+            <img src="images/post-1.png" alt="post-1-img">
+            <img src="images/post-2.png" alt="post-2-img">
+            <img src="images/post-3.png" alt="post-3-img">
+            <img src="images/post-4.png" alt="post-4-img">
+        </div>
+        <a class="custom-button" id="instagram-button">
+            Visit Our Instagram<i class="button-icon" id="instagram-icon"></i></a>
+    </section>
+
+    <section class="tryThis">
+        <div class="tryThis-header">
+            <div class="flex">
+                <h1 class="custom-title">Try this delicious recipe <br> to make your day</h1>
+                <p class="custom-desc">
+                    Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do <br>
+                    incididunt ut labore et dolore magna aliqut enim ad minim
+                </p>
+            </div>
+        
+            <div class="carousel-controls">
+                <button type="button" class="carousel-btn prev-btn">‹</button>
+                <button type="button" class="carousel-btn next-btn">›</button>
+            </div>
+        </div>
+        
+        <div id="tryThis-placeholder"></div>
+    </section>
+
+    <div id="sub-placeholder"></div>
+
+    <div id="footer-placeholder"></div>
+
+</body>
+
+</html>
