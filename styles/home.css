@@ -104,10 +104,8 @@
 .grid-foods {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    width: 1210px;
-    height: 1250px;
-    margin: 0 0 150px 50px;
+    gap: 0;
+    width: 100%;
     align-items: stretch;
     justify-items: center;
 }
@@ -118,8 +116,10 @@
     overflow: hidden;
     text-align: left;
     padding: 10px 0px 0px 15px;
+    margin: 20px 0;
     height: 390px;
-    width: 330px;
+    max-width: 330px;
+    width: 100%;
     cursor: pointer;
 }
 

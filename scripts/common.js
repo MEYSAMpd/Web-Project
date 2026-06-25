@@ -99,3 +99,13 @@ document.addEventListener("click", function (e) {
         return;
     }
 });
+
+function getScrollAmount() {
+    const firstCard = track.querySelector(".tryThis-item");
+    if (!firstCard)
+        return 300;
+    if (window.innerWidth <= 768) {
+        return firstCard.offsetWidth + 20;
+    }
+    return firstCard.offsetWidth + 40;
+}

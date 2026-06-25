@@ -1,0 +1,1240 @@
+/* ===== موبایل ===== */
+@media (max-width: 768px) {
+
+    /* هدر */
+    .header .container {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .header nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .header nav ul li {
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: 14px;
+    }
+
+    .header-actions {
+        display: none;
+        /* یا کوچک‌ترش کن */
+    }
+
+    .logo a {
+        font-size: 1.2em;
+    }
+
+    /* بخش hero (food) */
+    .flex#food {
+        flex-direction: column;
+        margin: 20px 10px;
+    }
+
+    .flex-text {
+        margin-left: 0;
+        padding-left: 20px;
+        border-radius: 20px;
+        order: 2;
+        /* متن پایین بیاد */
+    }
+
+    .flex-image {
+        order: 1;
+    }
+
+    .badge-icon {
+        top: 10%;
+        left: 70%;
+        transform: translate(-50%, -50%);
+        width: 60px;
+    }
+
+    .badge-icon img {
+        width: 100%;
+    }
+
+    .custom-title {
+        font-size: 32px !important;
+    }
+
+    .custom-desc {
+        font-size: 14px;
+    }
+
+    .recipe-author {
+        flex-wrap: wrap;
+        padding-top: 20px;
+    }
+
+    .recipe-author-info {
+        padding-right: 0;
+    }
+
+    .custom-button {
+        padding: 12px 20px;
+        font-size: 12px;
+    }
+
+    /* Categories */
+    .icons-container {
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .icon-item {
+        width: 120px;
+        height: 160px;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .icon-item img {
+        width: 50px;
+    }
+
+    .left-text h1 {
+        font-size: 24px;
+    }
+
+    .right-text h3 {
+        font-size: 16px;
+    }
+
+    /* Grid recipes */
+    .grid-foods {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        width: 100%;
+        height: auto;
+        margin: 0 0 50px 0;
+    }
+
+    .recipe-card {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .recipe-card h3 {
+        font-size: 16px;
+    }
+
+    .recipe-card img {
+        width: 100%;
+        height: auto;
+    }
+
+    #healthyFood {
+        width: 100%;
+        height: auto;
+    }
+
+    #healthyFood img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* بخش chef */
+    .flex#chef {
+        flex-direction: column;
+        margin: 20px 10px;
+    }
+
+    .flex-text#chef {
+        order: 2;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .flex-image#chef-img {
+        order: 1;
+        width: 100%;
+    }
+
+    .flex-image#chef-img img {
+        width: 100%;
+        height: auto;
+        border-radius: 20px;   
+    }
+
+    /* اینستاگرام */
+    .instagram .flex {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        margin: 0 10px;
+    }
+
+    .instagram .flex img {
+        width: 45%;
+        height: auto;
+    }
+
+    .instagram h1 {
+        font-size: 28px;
+    }
+
+    /* Subscribe */
+    .sub {
+        margin: 50px 10px;
+    }
+
+    .sub .flex {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    #subscribe {
+        border-radius: 30px;
+        margin: 0;
+        min-height: auto;
+        padding: 30px 20px;
+    }
+
+    #subscribe h1 {
+        font-size: 28px;
+    }
+
+    #side-image-left,
+    #side-image-right {
+        display: none;
+        /* یا اگر می‌خوای نشون بدی: */
+        /* flex: 0 0 80px; */
+        /* border-radius: 20px; */
+    }
+
+    .input-box {
+        width: 90%;
+        flex-direction: column;
+        background: none;
+        padding: 0;
+    }
+
+    .input-box input {
+        width: 100%;
+        border-radius: 30px;
+        border: 1px solid #ccc;
+        padding: 14px;
+    }
+
+    .input-box button {
+        width: 100%;
+        border-radius: 30px;
+    }
+
+    /* TryThis (carousel) */
+    .tryThis .flex {
+        flex-direction: column;
+        margin: 20px 10px;
+    }
+
+    .tryThis-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .carousel-controls {
+        margin-top: 10px;
+        margin-right: 0;
+        align-self: flex-end;
+    }
+
+    .tryThis-item {
+        flex: 0 0 220px;
+        padding: 0 10px;
+    }
+
+    .tryThis .flex h1.custom-title {
+        font-size: 28px !important;
+        text-align: center;
+    }
+    
+    .tryThis .flex p.custom-desc {
+        font-size: 14px !important;
+        text-align: center;
+        padding-left: 0;
+    }
+    
+    .tryThis-item h3 {
+        font-size: 14px !important;
+        padding-bottom: 10px;
+    }
+    
+    .tryThis-item .recipe-tag {
+        font-size: 11px !important;
+        padding-left: 25px;
+        background-size: 18px 18px;
+    }
+    
+    .carousel-btn {
+        width: 36px;
+        height: 36px;
+        font-size: 20px;   
+    }
+
+    /* Blog list */
+    .main-layout {
+        flex-direction: column;
+        margin: 20px 10px;
+        padding: 0;
+    }
+
+    .posts {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .post-card-flex {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .post-image img {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+    }
+
+    .post-title {
+        font-size: 18px;
+    }
+
+    .sidebar-recipes {
+        margin-top: 30px;
+    }
+
+    .tasty-item {
+        flex-wrap: wrap;
+    }
+
+    .tasty-item img {
+        width: 100%;
+        height: auto;
+    }
+
+    .pagination .page-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 13px;
+    }
+
+    /* search */
+    .search .input-box {
+        width: 100%;
+        max-width: 400px;
+        margin: 40px auto;
+        background: #fff;
+        border: 1px solid #9b969641;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 5px;
+        height: auto;
+    }
+
+    .search .input-box input {
+        flex: 1;
+        border: none;
+        outline: none;
+        padding: 12px 16px;
+        font-size: 14px;
+        border-radius: 30px;
+        background: transparent;
+        opacity: 0.7;
+    }
+
+    .search .input-box button {
+        width: auto;
+        padding: 12px 24px;
+        border-radius: 30px;
+        background: #000;
+        color: #fff;
+        border: none;
+        font-size: 14px;
+        cursor: pointer;
+        height: auto;
+    }
+
+    /* Recipe Detail */
+    .recipe-details {
+        margin: 20px 10px;
+    }
+
+    .recipe-header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .recipe-title {
+        font-size: 32px;
+    }
+
+    .recipe-meta {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .meta-right {
+        justify-content: flex-start;
+        padding-top: 10px;
+    }
+
+    .recipe-content {
+        flex-direction: column;
+    }
+
+    .nutrition-card {
+        height: auto;
+        padding: 20px;
+    }
+
+    .recipe-left-column {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .ingredients-list li {
+        font-size: 14px;
+    }
+
+    .step p {
+        margin-left: 0;
+    }
+
+    .step-image {
+        margin-left: 0;
+    }
+
+    #recipeDetailText {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #questions-layout {
+        flex-direction: column;
+        margin: 20px 10px;
+    }
+
+    #questions {
+        margin-left: 0;
+    }
+
+    #share {
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    /* Contact */
+    .contact-us {
+        margin: 20px 10px;
+        padding: 0;
+    }
+
+    .contact-flex {
+        flex-direction: column;
+    }
+
+    .photoWrap img {
+        width: 100%;
+    }
+
+    .row {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .field input,
+    .field select,
+    .field textarea {
+        width: 100%;
+    }
+
+    .field select {
+        width: 115%;
+    }
+
+    .field textarea {
+        width: 100%;
+    }
+
+    .field .submit-btn {
+        width: 100%;
+    }
+
+    /* Footer */
+    footer .container {
+        flex-direction: column;
+        gap: 15px;
+        margin: 0 10px;
+    }
+
+    #downPage .container {
+        flex-direction: column;
+        gap: 10px;
+        margin: 0 10px;
+    }
+
+    #downPage p {
+        padding-left: 10px;
+        text-align: center;
+    }
+
+    #downPage .logo a {
+        font-size: 1.2em;
+    }
+
+    .footer-content p {
+        font-size: 14px;
+    }
+
+    .header-actions {
+        display: flex;
+        gap: 10px;
+    }
+
+    .header-icon {
+        margin-left: 10px;
+        width: 20px;
+        height: 20px;
+    }
+    .recipe-card h3 {
+        font-size: 15px !important;
+        padding-bottom: 10px;
+    }
+
+    .recipe-card .recipe-tag {
+        font-size: 12px !important;
+        padding-left: 28px;
+        background-size: 20px 20px;
+    }
+
+    .recipe-card .tag-container {
+        padding: 8px 10px 8px 0;   
+    }
+}
+
+/* ===== تبلت (769px تا 1024px) ===== */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    /* ------ قانون کلی برای همه تصاویر ------ */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* ------ هدر و ناو ------ */
+    .header .container {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .header nav ul li {
+        margin-left: 25px;
+        font-size: 15px;
+    }
+
+    .header-icon {
+        width: 20px;
+        height: 20px;
+        margin-left: 15px;
+    }
+
+    /* ------ بخش Hero (food) ------ */
+    /* بخش اصلی food */
+    .flex#food {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        /* این مهمه */
+        margin: 30px 20px;
+        gap: 0;
+    }
+
+    /* سمت چپ (متن) */
+    .flex-text {
+        flex: 1;
+        margin-left: 20px;
+        padding: 30px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 30px 0 0 30px;
+        min-height: 400px;
+        /* ارتفاع حداقل */
+    }
+
+    /* سمت راست (عکس) */
+    .flex-image {
+        flex: 1;
+        display: flex;
+        align-items: stretch;
+        border-radius: 0 30px 30px 0;
+        overflow: hidden;
+        min-height: 400px;
+        /* همون ارتفاع حداقل */
+    }
+
+    .flex-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        /* این باعث میشه عکس کل فضا رو پر کنه */
+        display: block;
+    }
+
+    /* نشان Badge */
+    .badge-icon {
+        top: 15%;
+        left: 55%;
+        width: 80px;
+        z-index: 5;
+    }
+
+    .badge-icon img {
+        width: 100%;
+        height: auto;
+    }
+    
+
+    .custom-title {
+        font-size: 38px !important;
+    }
+
+    .recipe-author-info {
+        padding-right: 50px;
+    }
+
+    /* ------ Categories ------ */
+    .icons-container {
+        gap: 20px;
+        padding: 15px;
+    }
+
+    .icon-item {
+        width: 140px;
+        height: 190px;
+        padding: 20px;
+    }
+
+    .icon-item img {
+        width: 60px;
+        height: auto;
+    }
+
+    .icon-item h3 {
+        font-size: 18px;
+    }
+
+    /* ------ Grid Recipes (home) ------ */
+    .grid-foods {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+        width: 100%;
+        height: auto;
+        margin: 0 0 80px 0;
+        padding: 0 20px;
+    }
+
+    .recipe-card {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+    }
+
+    .recipe-card img {
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+    }
+
+    .recipe-card h3 {
+        font-size: 18px !important;
+        padding-bottom: 15px;
+    }
+
+    .recipe-card .recipe-tag {
+        font-size: 13px !important;
+        padding-left: 30px;
+        background-size: 22px 22px;
+    }
+
+    #healthyFood {
+        width: 100%;
+        height: auto;
+    }
+
+    #healthyFood img {
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+    }
+
+    /* ------ Chef Section ------ */
+    .flex#chef {
+        flex-direction: row;
+        margin: 40px 20px;
+        align-items: center;
+    }
+
+    .flex-text#chef {
+        flex: 1;
+        padding: 30px;
+    }
+
+    .flex-image#chef-img {
+        flex: 1;
+    }
+
+    .flex-image#chef-img img {
+        width: 100%;
+        height: auto;
+        border-radius: 30px;
+    }
+
+    #chef-button {
+        width: auto;
+        padding: 12px 35px;
+        font-size: 14px;
+    }
+
+    /* ------ Instagram ------ */
+    .instagram {
+        margin: 100px 0 80px 0;
+        padding-bottom: 60px;
+    }
+
+    .instagram .flex {
+        gap: 20px;
+        justify-content: center;
+        margin: 0 20px;
+        flex-wrap: wrap;
+    }
+
+    .instagram .flex img {
+        width: 22%;
+        height: auto;
+        border-radius: 20px;
+    }
+
+    .instagram h1 {
+        font-size: 34px;
+    }
+
+    #instagram-button {
+        width: auto;
+        padding: 12px 30px;
+    }
+
+    /* ------ Subscribe ------ */
+    .sub {
+        margin: 80px 20px;
+    }
+
+    .sub .flex {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        /* کل خانواده کشیده بشن */
+        margin: 0;
+        gap: 0;
+    }
+
+    /* عکس سمت چپ */
+    #side-image-left {
+        flex: 0 0 120px;
+        /* عرض ثابت ولی قابل تنظیم */
+        display: flex;
+        align-items: stretch;
+        overflow: hidden;
+        border-radius: 30px 0 0 30px;
+    }
+
+    #side-image-left img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    /* باکس وسط (Subscribe) */
+    #subscribe {
+        flex: 1;
+        margin-left: 0;
+        padding: 30px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0;
+        min-height: 320px;
+        /* ارتفاع حداقل */
+    }
+
+    /* عکس سمت راست */
+    #side-image-right {
+        flex: 0 0 120px;
+        /* عرض ثابت */
+        display: flex;
+        align-items: stretch;
+        overflow: hidden;
+        border-radius: 0 30px 30px 0;
+    }
+
+    #side-image-right img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    /* تنظیمات داخلی باکس subscribe */
+    #subscribe h1 {
+        font-size: 32px !important;
+        text-align: center;
+    }
+
+    #subscribe p {
+        font-size: 14px !important;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+
+    .input-box {
+        width: 90%;
+        max-width: 400px;
+        flex-direction: row;
+        background: #fff;
+        padding: 6px;
+        border-radius: 30px;
+    }
+
+    .input-box input {
+        flex: 1;
+        padding: 12px 16px;
+        border-radius: 30px;
+        border: none;
+        outline: none;
+        font-size: 14px;
+    }
+
+    .input-box button {
+        width: auto;
+        padding: 12px 24px;
+        border-radius: 30px;
+        height: auto;
+        font-size: 14px;
+    }
+
+    /* ------ TryThis Carousel ------ */
+    .tryThis {
+        margin: 0 10px;
+    }
+
+    .tryThis .flex {
+        flex-direction: row;
+        margin: 20px 10px;
+        align-items: center;
+    }
+
+    .tryThis .flex h1.custom-title {
+        font-size: 32px !important;
+    }
+
+    .tryThis .flex p.custom-desc {
+        font-size: 14px !important;
+        padding-left: 20px;
+    }
+
+    .tryThis-header {
+        flex-wrap: wrap;
+    }
+
+    .carousel-controls {
+        margin-right: 10px;
+    }
+
+    .carousel-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 22px;
+    }
+
+    .tryThis-item {
+        flex: 0 0 230px;
+        padding: 0 10px;
+    }
+
+    .tryThis-item img {
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+    }
+
+    .tryThis-item h3 {
+        font-size: 15px !important;
+        padding-bottom: 10px;
+    }
+
+    .tryThis-item .recipe-tag {
+        font-size: 12px !important;
+        padding-left: 28px;
+        background-size: 20px 20px;
+    }
+
+    .tryThis-item .heart-icon {
+        top: 5px;
+        right: 15px;
+    }
+
+    .tryThis-item .heart-icon img {
+        width: 25px;
+        height: 25px;
+    }
+
+    /* ------ Blog List Page ------ */
+    .main-layout {
+        flex-direction: column;
+        padding: 0 20px;
+        margin: 20px 0;
+    }
+
+    .posts {
+        margin-right: 0;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .post-card-flex {
+        flex-direction: row;
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .post-image {
+        flex: 0 0 200px;
+    }
+
+    .post-image img {
+        width: 100%;
+        height: 140px;
+        object-fit: cover;
+        border-radius: 20px;
+        margin-right: 0;
+    }
+
+    .post-title {
+        font-size: 18px;
+    }
+
+    .post-excerpt {
+        font-size: 13px;
+    }
+
+    .sidebar-recipes {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-top: 30px;
+    }
+
+    .tasty-recipes {
+        flex: 1 1 55%;
+    }
+
+    .promo-banner {
+        flex: 1 1 40%;
+    }
+
+    .tasty-item {
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .tasty-item img {
+        width: 120px;
+        height: 80px;
+        object-fit: cover;
+        border-radius: 16px;
+    }
+
+    .tasty-info h4 {
+        font-size: 16px;
+    }
+
+    .promo-banner img {
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+    }
+
+    .pagination .page-btn {
+        width: 45px;
+        height: 45px;
+        font-size: 14px;
+    }
+
+    /* ------ Recipe Detail Page ------ */
+    .recipe-details {
+        margin: 30px 20px;
+    }
+
+    .recipe-header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .recipe-title {
+        font-size: 36px;
+    }
+
+    .recipe-meta {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .recipe-meta .recipe-author-info {
+        padding-right: 10px;
+    }
+
+    #meta-center {
+        padding: 0 10px 0 20px;
+    }
+
+    .meta-right {
+        padding-top: 5px;
+        justify-content: flex-start;
+    }
+
+    .icon-btn img {
+        width: 20px;
+        height: 20px;
+        padding: 18px;
+    }
+
+    .recipe-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .image-box {
+        flex: 1;
+        width: 100%;
+    }
+
+    .image-box img {
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+    }
+
+    .nutrition-card {
+        flex: 1;
+        width: 100%;
+        height: auto;
+        padding: 25px;
+    }
+
+    .nutrition-list {
+        margin-bottom: 30px;
+    }
+
+    #recipeDetailText {
+        margin: 20px 20px;
+        font-size: 14px;
+    }
+
+    .recipe-left-column {
+        margin-right: 0;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .recipe-left-column h1 {
+        font-size: 28px;
+    }
+
+    .ingredients-list li {
+        font-size: 15px;
+    }
+
+    .step p {
+        margin-left: 0;
+        font-size: 14px;
+    }
+
+    .step-image {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        border-radius: 16px;
+    }
+
+    #questions-layout {
+        flex-direction: column;
+        margin: 20px 20px;
+    }
+
+    #questions {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    #share {
+        margin-top: 30px;
+        text-align: center;
+        width: 100%;
+    }
+
+    #share img {
+        width: 28px;
+        height: 28px;
+        margin: 5px 10px;
+    }
+
+    /* ------ Contact Page ------ */
+    .contact-us {
+        margin: 30px 20px;
+        padding: 0;
+    }
+
+    .contact-flex {
+        flex-direction: row;
+        gap: 30px;
+        align-items: flex-start;
+    }
+
+    .photoWrap {
+        flex: 1;
+    }
+
+    .photoWrap img {
+        width: 100%;
+        height: auto;
+        border-radius: 30px;
+    }
+
+    .form {
+        flex: 2;
+        padding-top: 0;
+    }
+
+    .row {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .row.one {
+        grid-template-columns: 1fr;
+    }
+
+    .field input,
+    .field select,
+    .field textarea {
+        width: 100%;
+        padding: 14px 12px;
+        font-size: 14px;
+        box-sizing: border-box;
+    }
+
+    .field select {
+        width: 100%;
+    }
+
+    .field textarea {
+        width: 100%;
+        height: 120px;
+    }
+
+    .field .submit-btn {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    /* ------ About Us Page ------ */
+    .about-us h1 {
+        font-size: 40px !important;
+    }
+
+    /* ------ Blog Post Page ------ */
+    .become-chef {
+        margin: 20px 20px 60px;
+    }
+
+    .become-chef h1 {
+        font-size: 38px !important;
+    }
+
+    .become-chef img#pro-chef {
+        width: 100%;
+        height: auto;
+        border-radius: 30px;
+    }
+
+    .become-chef .post-meta {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    /* ------ Footer & DownPage ------ */
+    footer .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0 20px;
+    }
+
+    #downPage .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0 20px;
+    }
+
+    #downPage p {
+        padding-left: 20px;
+        font-size: 14px;
+    }
+
+    .footer-content p {
+        font-size: 14px;
+    }
+    /* برای تصاویر داخل tasty-item در تبلت */
+    .tasty-item img {
+        width: 120px !important;
+        height: 80px !important;
+        object-fit: cover;
+    }
+
+    /* برای تصاویر داخل post-card در تبلت */
+    .post-image img {
+        width: 100% !important;
+        height: 140px !important;
+        object-fit: cover;
+    }
+
+    /* برای تصاویر داخل tryThis-item در تبلت */
+    .tryThis-item img {
+        width: 100% !important;
+        height: auto !important;
+        border-radius: 20px;
+    }
+
+    /* برای تصاویر داخل grid-foods در تبلت */
+    .recipe-card img {
+        width: 100% !important;
+        height: auto !important;
+        border-radius: 20px;
+    }
+
+    /* برای تصاویر داخل instagram */
+    .instagram .flex img {
+        width: 22% !important;
+        height: auto !important;
+    }
+}
