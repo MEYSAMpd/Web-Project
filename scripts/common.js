@@ -17,6 +17,10 @@ async function init() {
     await loadFooter();
 
     setupNavbar();
+
+    if (typeof initializePage === "function") {
+        await initializePage();
+    }
 }
 
 init();
@@ -132,3 +136,16 @@ document.addEventListener("click", function (e) {
 document.addEventListener("DOMContentLoaded", function () {
     initTryThisCarousel();
 });
+
+function showError(message, containerId) {
+
+    const container = document.getElementById(containerId);
+
+    if (!container) return;
+
+    container.innerHTML = `
+        <div class="error-message">
+            ${message}
+        </div>
+    `;
+}

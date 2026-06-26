@@ -11,7 +11,10 @@
     <link rel="stylesheet" href="styles/recipe-detail.css">
     <link rel="stylesheet" href="styles/responsive.css">
     
+
+    <script src="scripts/api.js" defer></script>
     <script src="scripts/common.js" defer></script>
+    <script src="scripts/recipeDetail.js" defer></script>
 </head>
 
 <body>
@@ -19,15 +22,21 @@
     <div id="header-placeholder"></div>
     
     <section class="recipe-details">
+        <div id="loading-spinner" class="spinner-container">
+            <div class="spinner"></div>
+        </div>
         <div class="recipe-header">
             <div class="meta-left">
-                <h1 class="recipe-title">Health Japanese Fried Rice</h1>
+                <!-- <h1 class="recipe-title">Health Japanese Fried Rice</h1> -->
+                <h1 class="recipe-title" id="recipe-title"></h1>
                 <div class="recipe-meta">
                     <div class="recipe-author">
                         <img src="images/john-icon.svg" alt="john-img" class="recipe-author-img">
                         <div class="recipe-author-info">
-                            <h4>John Smith</h4>
-                            <p class="recipe-author-date">15 March 2022</p>
+                            <!-- <h4>John Smith</h4>
+                            <p class="recipe-author-date">15 March 2022</p> -->
+                            <h4 id="author-name"></h4>
+                            <p class="recipe-author-date" id="author-date"></p>
                         </div>
                     </div>
                         
@@ -35,20 +44,23 @@
                         <img src="images/clock-icon.svg" alt="clock-icon">
                         <div class="recipe-author-info">
                             <h4>PREP TIME</h4>
-                            <p class="recipe-author-date">15 Minutes</p>
+                            <!-- <p class="recipe-author-date">15 Minutes</p> -->
+                            <p id="prep-time"></p>
                         </div>
                     </div>
                     <div class="recipe-author" id="meta-center">
                         <img src="images/clock-icon.svg" alt="clock-icon">
                         <div class="recipe-author-info">
                             <h4>COOK TIME</h4>
-                            <p class="recipe-author-date">15 Minutes</p>
+                            <!-- <p class="recipe-author-date">15 Minutes</p> -->
+                            <p id="cook-time"></p>
                         </div>
                     </div>
                     <div class="recipe-author" id="meta-center">
                         <img src="images/ForkKnife-icon.svg" alt="ForkKnife-icon">
                         <div class="recipe-author-info">
-                            <p class="recipe-author-date">Chicken</p>
+                            <!-- <p class="recipe-author-date">Chicken</p> -->
+                            <p id="recipe-category"></p>
                         </div>
                     </div>
                 </div>
@@ -69,11 +81,12 @@
     
         <div class="recipe-content">
             <div class="image-box">
-                <img src="images/video.png" alt="Japanese Fried Rice" class="recipe-image">
+                <!-- <img src="images/video.png" alt="Japanese Fried Rice" class="recipe-image"> -->
+                <div class="image-box" id="recipe-image-box"></div>
 
             </div>
 
-            <aside class="nutrition-card">
+            <!-- <aside class="nutrition-card">
                 <h2>Nutrition Information</h2>
                 <ul class="nutrition-list">
                     <li><span class="list-title">Calories</span><span class="list-value">219.9 kcal</span></li>
@@ -85,18 +98,23 @@
                 <p class="nutrition-note">
                     Adipisicing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.
                 </p>
+            </aside> -->
+            <aside class="nutrition-card">
+                <h2>Nutrition Information</h2>
+                <ul class="nutrition-list" id="nutrition-list"></ul>    
             </aside>
         </div>
     </section>
 
-    <div class="custom-desc" id="recipeDetailText">
+    <!-- <div class="custom-desc" id="recipeDetailText">
         <p>Lorem ipsum dolor sit amet, consectrtur adipiscing elit, sed do eiusmod tempor 
             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud <br>
             exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
             dolor in reprehenderit in voluptate velit esse cillum dolor eu fugiat nulla pariatur. <br>
             Excepteur sint occaecat cupidatat non proident, dunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
-    </div>
+    </div> -->
+    <div id="recipeDetailText"></div>
 
     <main class="main-layout">
         <section class="recipe-left-column">
