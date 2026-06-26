@@ -1,34 +1,74 @@
-/* ===== موبایل ===== */
+/* mobile  < 769px */
 @media (max-width: 768px) {
 
-    /* هدر */
-    .header .container {
-        flex-wrap: wrap;
-        justify-content: center;
+    /* Humburger */
+    .hamburger {
+        display: flex !important;
+    }
+
+    #mainHeader {
+        position: relative;
+        z-index: 9999;
+    }
+
+    #mainHeader nav {
+        display: none;
+        position: fixed;
+        top: 95px;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, .1);
+        z-index: 9999;
+    }
+
+    #mainHeader nav.open {
+        display: block;   
+    }
+
+    #mainHeader nav ul {
+        flex-direction: column;
+        align-items: center;
         gap: 15px;
     }
 
-    .header nav ul {
-        flex-wrap: wrap;
-        justify-content: center;
+    #mainHeader nav ul li {
+        margin-left: 0;
+        font-size: 18px;
+        padding: 10px 0;
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid #f0f0f0;
     }
 
-    .header nav ul li {
-        margin-left: 15px;
-        margin-right: 15px;
-        font-size: 14px;
+    #mainHeader nav ul li:last-child {
+        border-bottom: none;
     }
 
-    .header-actions {
-        display: none;
-        /* یا کوچک‌ترش کن */
+    #mainHeader .container {
+        position: relative;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #mainHeader .header-actions {
+        order: 3;
+        display: flex;
+        gap: 10px;
+    }
+
+    #mainHeader .header-icon {
+        width: 20px;
+        height: 20px;
+        margin-left: 10px;
     }
 
     .logo a {
-        font-size: 1.2em;
+        font-size: 1.3em;
     }
 
-    /* بخش hero (food) */
+    /* food section */
     .flex#food {
         flex-direction: column;
         margin: 20px 10px;
@@ -39,7 +79,6 @@
         padding-left: 20px;
         border-radius: 20px;
         order: 2;
-        /* متن پایین بیاد */
     }
 
     .flex-image {
@@ -138,7 +177,7 @@
         height: auto;
     }
 
-    /* بخش chef */
+    /* chef section */
     .flex#chef {
         flex-direction: column;
         margin: 20px 10px;
@@ -161,7 +200,7 @@
         border-radius: 20px;   
     }
 
-    /* اینستاگرام */
+    /* instagram */
     .instagram .flex {
         flex-wrap: wrap;
         justify-content: center;
@@ -202,9 +241,6 @@
     #side-image-left,
     #side-image-right {
         display: none;
-        /* یا اگر می‌خوای نشون بدی: */
-        /* flex: 0 0 80px; */
-        /* border-radius: 20px; */
     }
 
     .input-box {
@@ -312,9 +348,11 @@
     }
 
     .tasty-item img {
-        width: 100%;
-        height: auto;
+        width: 120px !important;
+        height: 80px !important;
+        object-fit: cover;
     }
+
 
     .pagination .page-btn {
         width: 40px;
@@ -386,6 +424,21 @@
 
     .recipe-content {
         flex-direction: column;
+    }
+    
+    .recipe-card h3 {
+        font-size: 15px !important;
+        padding-bottom: 10px;
+    }
+
+    .recipe-card .recipe-tag {
+        font-size: 12px !important;
+        padding-left: 28px;
+        background-size: 20px 20px;
+    }
+
+    .recipe-card .tag-container {
+        padding: 8px 10px 8px 0;
     }
 
     .nutrition-card {
@@ -463,71 +516,63 @@
     }
 
     .field .submit-btn {
-        width: 100%;
+        width: 115%;
     }
 
     /* Footer */
     footer .container {
         flex-direction: column;
-        gap: 15px;
-        margin: 0 10px;
+        gap: 20px;
+        text-align: center;
+        padding: 20px 10px;
     }
 
+    .footer-content p {
+        font-size: 14px;
+        margin: 0;
+    }
+
+    footer .header-actions {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 5px;
+    }
+    
+    footer .header-icon {
+        width: 22px;
+        height: 22px;
+        margin-left: 0;
+    }
+        
     #downPage .container {
         flex-direction: column;
         gap: 10px;
-        margin: 0 10px;
+        text-align: center;
     }
 
     #downPage p {
-        padding-left: 10px;
+        padding-left: 0;
         text-align: center;
+        font-size: 14px;
     }
 
     #downPage .logo a {
         font-size: 1.2em;
     }
 
-    .footer-content p {
-        font-size: 14px;
-    }
 
-    .header-actions {
-        display: flex;
-        gap: 10px;
-    }
-
-    .header-icon {
-        margin-left: 10px;
-        width: 20px;
-        height: 20px;
-    }
-    .recipe-card h3 {
-        font-size: 15px !important;
-        padding-bottom: 10px;
-    }
-
-    .recipe-card .recipe-tag {
-        font-size: 12px !important;
-        padding-left: 28px;
-        background-size: 20px 20px;
-    }
-
-    .recipe-card .tag-container {
-        padding: 8px 10px 8px 0;   
-    }
 }
 
-/* ===== تبلت (769px تا 1024px) ===== */
+/* 769px -> 1024px */
 @media (min-width: 769px) and (max-width: 1024px) {
 
-    /* ------ قانون کلی برای همه تصاویر ------ */
     img {
         max-width: 100%;
         height: auto;
     }
 
-    /* ------ هدر و ناو ------ */
+    /* header & nav */
     .header .container {
         flex-wrap: wrap;
         justify-content: space-between;
@@ -544,18 +589,15 @@
         margin-left: 15px;
     }
 
-    /* ------ بخش Hero (food) ------ */
-    /* بخش اصلی food */
+    /* food section */
     .flex#food {
         display: flex;
         flex-direction: row;
         align-items: stretch;
-        /* این مهمه */
         margin: 30px 20px;
         gap: 0;
     }
 
-    /* سمت چپ (متن) */
     .flex-text {
         flex: 1;
         margin-left: 20px;
@@ -565,10 +607,8 @@
         justify-content: center;
         border-radius: 30px 0 0 30px;
         min-height: 400px;
-        /* ارتفاع حداقل */
     }
 
-    /* سمت راست (عکس) */
     .flex-image {
         flex: 1;
         display: flex;
@@ -576,18 +616,15 @@
         border-radius: 0 30px 30px 0;
         overflow: hidden;
         min-height: 400px;
-        /* همون ارتفاع حداقل */
     }
 
     .flex-image img {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        /* این باعث میشه عکس کل فضا رو پر کنه */
         display: block;
     }
 
-    /* نشان Badge */
     .badge-icon {
         top: 15%;
         left: 55%;
@@ -630,7 +667,7 @@
         font-size: 18px;
     }
 
-    /* ------ Grid Recipes (home) ------ */
+    /* Grid Recipes */
     .grid-foods {
         grid-template-columns: repeat(2, 1fr);
         gap: 25px;
@@ -647,8 +684,8 @@
     }
 
     .recipe-card img {
-        width: 100%;
-        height: auto;
+        width: 100% !important;
+        height: auto !important;
         border-radius: 20px;
     }
 
@@ -674,7 +711,7 @@
         border-radius: 20px;
     }
 
-    /* ------ Chef Section ------ */
+    /* Chef Section */
     .flex#chef {
         flex-direction: row;
         margin: 40px 20px;
@@ -702,7 +739,7 @@
         font-size: 14px;
     }
 
-    /* ------ Instagram ------ */
+    /* Instagram */
     .instagram {
         margin: 100px 0 80px 0;
         padding-bottom: 60px;
@@ -716,9 +753,8 @@
     }
 
     .instagram .flex img {
-        width: 22%;
-        height: auto;
-        border-radius: 20px;
+        width: 22% !important;
+        height: auto !important;
     }
 
     .instagram h1 {
@@ -730,7 +766,7 @@
         padding: 12px 30px;
     }
 
-    /* ------ Subscribe ------ */
+    /* Subscribe */
     .sub {
         margin: 80px 20px;
     }
@@ -739,15 +775,12 @@
         display: flex;
         flex-direction: row;
         align-items: stretch;
-        /* کل خانواده کشیده بشن */
         margin: 0;
         gap: 0;
     }
 
-    /* عکس سمت چپ */
     #side-image-left {
         flex: 0 0 120px;
-        /* عرض ثابت ولی قابل تنظیم */
         display: flex;
         align-items: stretch;
         overflow: hidden;
@@ -761,7 +794,7 @@
         display: block;
     }
 
-    /* باکس وسط (Subscribe) */
+    /* Subscribe */
     #subscribe {
         flex: 1;
         margin-left: 0;
@@ -772,13 +805,10 @@
         align-items: center;
         border-radius: 0;
         min-height: 320px;
-        /* ارتفاع حداقل */
     }
 
-    /* عکس سمت راست */
     #side-image-right {
         flex: 0 0 120px;
-        /* عرض ثابت */
         display: flex;
         align-items: stretch;
         overflow: hidden;
@@ -792,7 +822,6 @@
         display: block;
     }
 
-    /* تنظیمات داخلی باکس subscribe */
     #subscribe h1 {
         font-size: 32px !important;
         text-align: center;
@@ -830,7 +859,7 @@
         font-size: 14px;
     }
 
-    /* ------ TryThis Carousel ------ */
+    /* TryThis Carousel */
     .tryThis {
         margin: 0 10px;
     }
@@ -870,11 +899,10 @@
     }
 
     .tryThis-item img {
-        width: 100%;
-        height: auto;
+        width: 100% !important;
+        height: auto !important;
         border-radius: 20px;
     }
-
     .tryThis-item h3 {
         font-size: 15px !important;
         padding-bottom: 10px;
@@ -896,7 +924,7 @@
         height: 25px;
     }
 
-    /* ------ Blog List Page ------ */
+    /* Blog List Page */
     .main-layout {
         flex-direction: column;
         padding: 0 20px;
@@ -920,8 +948,8 @@
     }
 
     .post-image img {
-        width: 100%;
-        height: 140px;
+        width: 100% !important;
+        height: 140px !important;
         object-fit: cover;
         border-radius: 20px;
         margin-right: 0;
@@ -979,7 +1007,7 @@
         font-size: 14px;
     }
 
-    /* ------ Recipe Detail Page ------ */
+    /* Recipe Detail Page */
     .recipe-details {
         margin: 30px 20px;
     }
@@ -1097,7 +1125,7 @@
         margin: 5px 10px;
     }
 
-    /* ------ Contact Page ------ */
+    /* Contact Page */
     .contact-us {
         margin: 30px 20px;
         padding: 0;
@@ -1153,15 +1181,14 @@
 
     .field .submit-btn {
         width: 100%;
-        max-width: 200px;
     }
 
-    /* ------ About Us Page ------ */
+    /* About Us Page */
     .about-us h1 {
         font-size: 40px !important;
     }
 
-    /* ------ Blog Post Page ------ */
+    /* Blog Post Page */
     .become-chef {
         margin: 20px 20px 60px;
     }
@@ -1182,7 +1209,7 @@
         gap: 15px;
     }
 
-    /* ------ Footer & DownPage ------ */
+    /* Footer & DownPage */
     footer .container {
         flex-direction: row;
         flex-wrap: wrap;
@@ -1203,38 +1230,6 @@
 
     .footer-content p {
         font-size: 14px;
-    }
-    /* برای تصاویر داخل tasty-item در تبلت */
-    .tasty-item img {
-        width: 120px !important;
-        height: 80px !important;
-        object-fit: cover;
-    }
-
-    /* برای تصاویر داخل post-card در تبلت */
-    .post-image img {
-        width: 100% !important;
-        height: 140px !important;
-        object-fit: cover;
-    }
-
-    /* برای تصاویر داخل tryThis-item در تبلت */
-    .tryThis-item img {
-        width: 100% !important;
-        height: auto !important;
-        border-radius: 20px;
-    }
-
-    /* برای تصاویر داخل grid-foods در تبلت */
-    .recipe-card img {
-        width: 100% !important;
-        height: auto !important;
-        border-radius: 20px;
-    }
-
-    /* برای تصاویر داخل instagram */
-    .instagram .flex img {
-        width: 22% !important;
-        height: auto !important;
-    }
+    } 
+    
 }

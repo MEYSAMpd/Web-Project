@@ -1,11 +1,8 @@
 async function loadHeader() {
-
     const response = await fetch("partials/header.html");
     const data = await response.text();
 
     document.getElementById("header-placeholder").innerHTML = data;
-
-    setupNavbar();
 }
 
 async function loadFooter() {
@@ -13,40 +10,74 @@ async function loadFooter() {
     const data = await response.text();
 
     document.getElementById("footer-placeholder").innerHTML = data;
+}
+
+async function init() {
+    await loadHeader();
+    await loadFooter();
 
     setupNavbar();
 }
 
+init();
+
 function setupNavbar() {
+    // Menu items click
     const navItems = document.querySelectorAll(".header nav ul li");
+
     navItems.forEach(item => {
         item.addEventListener("click", function () {
             const targetPage = this.dataset.page;
-            window.location.href = targetPage;
+            if (targetPage) {
+                window.location.href = targetPage;
+            }
         });
     });
+
+    // Hamburger
+    const hamburger = document.getElementById("hamburgerBtn");
+    const nav = document.getElementById("mainNav");
+
+    if (hamburger && nav) {
+
+        hamburger.addEventListener("click", function (e) {
+            e.stopPropagation();
+
+            this.classList.toggle("active");
+            nav.classList.toggle("open");
+        });
+
+        document.addEventListener("click", function (e) {
+            if (
+                nav.classList.contains("open") &&
+                !nav.contains(e.target) &&
+                !hamburger.contains(e.target)
+            ) {
+                nav.classList.remove("open");
+                hamburger.classList.remove("active");
+            }
+        });
+    }
 }
 
-loadHeader();
-loadFooter();
-
-fetch('partials/tryThis.html')
+fetch("partials/tryThis.html")
     .then(res => res.text())
     .then(html => {
-        const el = document.getElementById('tryThis-placeholder');
+        const el = document.getElementById("tryThis-placeholder");
         if (!el) return;
+
         el.innerHTML = html;
         initTryThisCarousel();
-    }
-    );
+    });
 
-fetch('partials/sub.html')
+fetch("partials/sub.html")
     .then(res => res.text())
     .then(html => {
-        document.getElementById('sub-placeholder').innerHTML = html;
-    }
-    );
+        const el = document.getElementById("sub-placeholder");
+        if (!el) return;
 
+        el.innerHTML = html;
+    });
 
 function initTryThisCarousel() {
     const carousel = document.querySelector("[data-trythis-carousel]");
@@ -59,7 +90,10 @@ function initTryThisCarousel() {
     const getScrollAmount = () => {
         const firstCard = track.querySelector(".tryThis-item");
         if (!firstCard) return 300;
-        return firstCard.offsetWidth + 40;
+
+        return window.innerWidth <= 768
+            ? firstCard.offsetWidth + 20
+            : firstCard.offsetWidth + 40;
     };
 
     if (prevBtn) {
@@ -83,29 +117,18 @@ function initTryThisCarousel() {
 
 document.addEventListener("click", function (e) {
     const card = e.target.closest(".tryThis-item, .recipe-card, .post-card, .tasty-item");
+
     if (card && card.dataset.page) {
         window.location.href = card.dataset.page;
+    }
+
+    const button = e.target.closest(".custom-button");
+
+    if (button && button.dataset.page) {
+        window.location.href = button.dataset.page;
     }
 });
 
 document.addEventListener("DOMContentLoaded", function () {
     initTryThisCarousel();
 });
-
-document.addEventListener("click", function (e) {
-    const button = e.target.closest(".custom-button");
-    if (button && button.dataset.page) {
-        window.location.href = button.dataset.page;
-        return;
-    }
-});
-
-function getScrollAmount() {
-    const firstCard = track.querySelector(".tryThis-item");
-    if (!firstCard)
-        return 300;
-    if (window.innerWidth <= 768) {
-        return firstCard.offsetWidth + 20;
-    }
-    return firstCard.offsetWidth + 40;
-}
