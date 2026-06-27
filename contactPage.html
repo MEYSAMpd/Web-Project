@@ -11,7 +11,10 @@
     <link rel="stylesheet" href="styles/contact.css">
     <link rel="stylesheet" href="styles/responsive.css">
     
+    <script src="scripts/api.js" defer></script>
     <script src="scripts/common.js" defer></script>
+    <script src="scripts/contact.js" defer></script>
+
 </head>
 
 <body>
@@ -26,31 +29,31 @@
                 <img class="photo" src="images/chef2.png" alt="chef2-img" />
             </div>
     
-            <form class="form">
+            <form id="contactForm" class="form">
                 <div class="row">
                     <div class="field">
                         <label>Name</label>
-                        <input type="text" placeholder="Enter your name..." />
+                        <input id="name" type="text" placeholder="Enter your name..." />
                     </div>
     
                     <div class="field">
                         <label>Email address</label>
-                        <input type="text" placeholder="Your email address..." />
+                        <input id="email" type="text" placeholder="Your email address..." />
                     </div>
                 </div>
     
                 <div class="row">
                     <div class="field">
                         <label>Subject</label>
-                        <input type="text" placeholder="Enter subject..." />
+                        <input id="subject" type="text" placeholder="Enter subject..." />
                     </div>
 
                     <div class="field">
                         <label>Enquiry type</label>
-                        <select>
+                        <select id="enquiryType">
                             <option>Advertising</option>
                             <option>General</option>
-                            <option>Support</option>
+                            <option>Support</option>              
                         </select>
                     </div>
                 </div>
@@ -58,13 +61,13 @@
                 <div class="row one">
                     <div class="field">
                         <label>Messages</label>
-                        <textarea rows="6" placeholder="Enter your messages..."></textarea>
+                        <textarea id="message" rows="6" placeholder="Enter your messages..."></textarea>
                     </div>
                 </div>
 
                 <div class="row one">
                     <div class="field">
-                        <input class="submit-btn" type="submit" value="SUBMIT"/>
+                        <input id="contact-btn" class="submit-btn" type="submit" value="SUBMIT">
                     </div>
                 </div>
             </form>

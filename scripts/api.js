@@ -51,3 +51,14 @@ async function getRecipeDetails(id) {
         throw err;
     }
 }
+
+// method 1
+async function subscribe(email) {
+    return await postData("/api/subscribe", {
+        email: email
+    });
+}
+
+
+// method 2
+const sendContact = (data) => postData("/api/contact", data);

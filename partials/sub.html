@@ -3,16 +3,23 @@
         <div class="flex-image" id="side-image-left">
             <img src="images/left-food.png" alt="food-img">
         </div>
+
         <div class="flex-text" id="subscribe">
             <h1 class="custom-title">Deliciousness to your inbox</h1>
+
             <p class="custom-desc">
                 Lorem ipsum dolor sit amet, consectetuipisicing elit, sed doeiusmod tempor <br>
                 incididunt ut labore et dolore magna aliqut enim ad minim
             </p>
-            <div class="input-box">
-                <input type="email" placeholder="Your email address..." />
-                <button>Subscribe</button>
-            </div>
+
+            <form class="input-box" id="newsletter-form">
+                <input id="newsletter-email" type="email" placeholder="Your email address..." required>
+
+                <button id="newsletter-btn" type="submit">
+                    Subscribe
+                </button>
+            </form>
+
         </div>
 
         <div class="flex-image" id="side-image-right">

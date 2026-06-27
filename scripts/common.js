@@ -78,9 +78,12 @@ fetch("partials/sub.html")
     .then(res => res.text())
     .then(html => {
         const el = document.getElementById("sub-placeholder");
+
         if (!el) return;
 
         el.innerHTML = html;
+
+        initNewsletter();
     });
 
 function initTryThisCarousel() {
@@ -148,4 +151,56 @@ function showError(message, containerId) {
             ${message}
         </div>
     `;
+}
+
+
+function initNewsletter() {
+
+    const newsletterForm = document.querySelector("#newsletter-form");
+
+    if (!newsletterForm)
+        return;
+
+    newsletterForm.addEventListener("submit", handleNewsletter);
+}
+
+
+async function handleNewsletter(e) {
+
+    e.preventDefault();
+
+    const input = document.querySelector("#newsletter-email");
+    const button = document.querySelector("#newsletter-btn");
+
+    const email = input.value.trim();
+
+    if (!email) {
+        alert("Please enter your email.");
+        return;
+    }
+
+    button.disabled = true;
+    button.textContent = "Loading...";
+
+    try {
+
+        const result = await subscribe(email);
+
+        alert(result.message || "Subscribed successfully!");
+
+        input.value = "";
+
+    }
+    catch (error) {
+
+        alert(error.message || "Subscription failed.");
+
+    }
+    finally {
+
+        button.disabled = false;
+        button.textContent = "Subscribe";
+
+    }
+
 }
